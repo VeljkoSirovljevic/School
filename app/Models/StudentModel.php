@@ -12,6 +12,17 @@ use App\Classes\Model;
 
 class StudentModel extends Model {
 
+    public function index()
+    {
+        $this->query('SELECT * FROM students');
+        $rows = $this->resultSet();
+        if (count($rows)) {
+            return $rows;
+        } else {
+            return;
+        }
+    }
+
     public function add(){
         // Sanitize POST
         $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
