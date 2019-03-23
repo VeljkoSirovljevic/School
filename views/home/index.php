@@ -29,3 +29,24 @@
         <input class="btn btn-primary" name="submit" type="submit" value="Submit" />
     </form>
 </div>
+
+<?php if (count($viewmodel)) : ?>
+<hr>
+<h2>Students:</h2>
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>Board</th>
+            <th>Name</th>
+            <th>Link</th>
+        </tr>
+        <?php foreach ($viewmodel as $student) : ?>
+            <tr>
+                <td><?php echo $student['board']; ?></td>
+                <td><?php echo $student['name']; ?></td>
+                <td><a href="<?php echo ROOT_URL . 'home/student/' . $student['id'] ?>">link</a></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+</div>
+<?php endif ?>

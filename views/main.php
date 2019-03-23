@@ -1,8 +1,8 @@
 <html>
 <head>
 	<title>Quantox</title>
-	<link rel="stylesheet" href="<?php echo ROOT_URL; ?>assets/css/bootstrap.css">
-	<link rel="stylesheet" href="<?php echo ROOT_URL; ?>assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ; ?>assets/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ; ?>assets/css/style.css">
 </head>
 <body>
 <div class="row">
